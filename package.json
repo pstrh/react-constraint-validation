@@ -2,6 +2,21 @@
   "name": "react-constraint-validation",
   "version": "0.1.0",
   "description": "Constraint validation for react as HOC",
+  "repository": "pstrh/react-constraint-validation",
+  "keywords": [
+    "react-constraint-validation",
+    "react",
+    "html constraint validation",
+    "validation",
+    "react-dom",
+    "formik",
+    "form",
+    "forms",
+    "higher order component",
+    "hoc"
+  ],
+  "author": "pstrh",
+  "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -9,8 +24,6 @@
     "test-watch": "jest --watch",
     "build": "tsc"
   },
-  "author": "pstrh",
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "23.3.0",
     "@types/react": "16.4.6",
