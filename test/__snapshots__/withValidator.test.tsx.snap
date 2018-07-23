@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailField test 1`] = `
+Array [
+  "validateTest: valid",
+  "validateTest: test is required",
+  "validateTest: test is not a valid email",
+  "validateTest: test is not a valid email",
+  "validateTest: valid",
+]
+`;
+
+exports[`NumberField test 1`] = `
+Array [
+  "validateTest: valid",
+  "validateTest: test is required",
+  "validateTest: test must be a number",
+  "validateTest: test must be greater than 2",
+  "validateTest: test must be less than 4",
+  "validateTest: valid",
+]
+`;
+
+exports[`TextField test 1`] = `
+Array [
+  "validateTest: valid",
+  "validateTest: test is required",
+  "validateTest: valid",
+  "validateTest: test must have at least 3 characters",
+  "validateTest: test must have less than 5 characters",
+  "validateTest: valid",
+  "validateTest: valid",
+  "validateTest: test does not match the pattern ^[a-z0-9_\\\\-]+$",
+]
+`;

@@ -1,0 +1,36 @@
+{
+  "name": "react-constraint-validation-formik-example",
+  "version": "0.0.1",
+  "description": "Example to show usage with formik",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run devserver",
+    "clean": ".\\node_modules\\.bin\\rimraf -rf public/dist/",
+    "dist": ".\\node_modules\\.bin\\webpack",
+    "build": "webpack --config webpack.config.js",
+    "devserver": ".\\node_modules\\.bin\\webpack-dev-server --content-base public/"
+  },
+  "author": "pstr",
+  "license": "MIT",
+  "dependencies": {
+    "formik": "^1.0.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.6",
+    "awesome-typescript-loader": "^5.0.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.9.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4",
+    "prettier": "^1.12.0"
+  },
+  "prettier": {
+    "printWidth": 150,
+    "tabWidth": 4,
+    "arrowParens": "always"
+  }
+}

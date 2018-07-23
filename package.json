@@ -1,0 +1,42 @@
+{
+  "name": "react-constraint-validation",
+  "version": "0.1.0",
+  "description": "Constraint validation for react as HOC",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "build": "tsc"
+  },
+  "author": "pstrh",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "23.3.0",
+    "@types/react": "16.4.6",
+    "@types/react-test-renderer": "16.0.1",
+    "jest": "23.4.1",
+    "react": "16.4.1",
+    "react-test-renderer": "16.4.1",
+    "ts-jest": "22.4.2",
+    "typescript": "2.9.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__test__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {"registry": "https://registry.npmjs.org/"}
+}
