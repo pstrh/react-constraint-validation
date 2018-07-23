@@ -13,11 +13,11 @@
 
 You don't want to declare field-level validation like this with your form framework:
 
-    <Field name="age" validate={[required, number, minValue13]} /> 
+    <Field name="username" validate={[required, minLength2, maxLength20]} /> 
     
 Instead you want to write:
 
-    <NumberField name="age" required min={13} />    
+    <Field name="username" required minLength={2} maxLength={20} />    
     
 ### Form framework needed
 
@@ -39,7 +39,7 @@ Enhance a Formik field component with validation (should be done once per applic
 
 Use your enhanced components in your form:
 
-    <TextField type="text" name="username" required minLength={2} maxLength={20} />
+    <TextField name="username" required minLength={2} maxLength={20} />
 
 A complete example can be found in [examples/formik](https://github.com/pstrh/react-constraint-validation/blob/master/examples/formik/src/components/FieldLevelValidation.tsx).
 
