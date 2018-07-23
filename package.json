@@ -1,6 +1,6 @@
 {
   "name": "react-constraint-validation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Constraint validation for react as HOC",
   "repository": "pstrh/react-constraint-validation",
   "keywords": [
