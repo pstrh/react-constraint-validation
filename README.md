@@ -4,7 +4,7 @@
 ### Features
 
 - HTML Constraint Validation attributes for React components (without refs)
-- Easily Extensible with own validators
+- Easily extensible with own validators
 - Localisation of error messages and interpolation
 - Written in Typescript 
 - Perfect fit to Formik
@@ -31,7 +31,7 @@ Add react-constraint-validation:
 
     $ npm install react-constraint-validation --save
     
-Enhance a Formik field component with validation (should be done once per Application):
+Enhance a Formik field component with validation (should be done once per application):
 
     const NumberField = withValidator({required, min, max },{number})(Field);
     const TextField = withValidator({required, minLength, maxLength})(Field);
@@ -45,7 +45,7 @@ A complete example can be found in [examples/formik](https://github.com/pstrh/re
 
 ### WIP
 
-This is a new project. The basic functionality is there and can be tested.
+This is a new project. The basic functionality is there and can be used.
 
 Next topics/open issues:
 - This list as GitHub issues ;)
