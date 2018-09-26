@@ -13,7 +13,7 @@
   "author": "pstr",
   "license": "MIT",
   "dependencies": {
-    "formik": "^1.0.1",
+    "formik": "1.3.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },

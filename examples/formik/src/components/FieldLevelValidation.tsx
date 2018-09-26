@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Formik, Field, Form } from 'formik';
+import {Formik, Field, Form, ErrorMessage} from 'formik';
 import { number, max, maxLength, min, minLength, required, email } from "../../../../src/Validator";
 import { withValidator } from "../../../../src/withValidator";
 
@@ -36,10 +36,7 @@ const FieldLevelValidation = () => (
                             type="text"
                             placeholder="Username"
                         />
-                        {errors.username &&
-                        touched.username && (
-                            <div className="field-error">{errors.username}</div>
-                        )}
+                        <ErrorMessage component="div" name="username"/>
                     </div>
                     <br />
                     <label htmlFor="age">Age</label>
@@ -52,10 +49,7 @@ const FieldLevelValidation = () => (
                             type="text"
                             placeholder="Age"
                         />
-                        {errors.age &&
-                        touched.age && (
-                            <div className="field-error">{errors.age}</div>
-                        )}
+                        <ErrorMessage component="div" name="age"/>
                     </div>
                     <br />
                     <label htmlFor="email">Email</label>
@@ -66,10 +60,7 @@ const FieldLevelValidation = () => (
                             type="text"
                             placeholder="Email"
                         />
-                        {errors.email &&
-                        touched.email && (
-                            <div className="field-error">{errors.email}</div>
-                        )}
+                        <ErrorMessage component="div" name="email"/>
                     </div>
                     <div>
             <pre>
