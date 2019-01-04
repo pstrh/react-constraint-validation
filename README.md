@@ -47,4 +47,4 @@ A complete example can be found in [examples/formik](https://github.com/pstrh/re
 
 This is a new project. The basic functionality is there and can be used.
 
-Any feedback, suggestions and constributions are welcome. 
+Any feedback, suggestions and contributions are welcome. 
