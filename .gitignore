@@ -2,3 +2,4 @@
 node_modules
 /dist
 git c
+/HOW_TO_RELEASE.md
