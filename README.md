@@ -47,9 +47,4 @@ A complete example can be found in [examples/formik](https://github.com/pstrh/re
 
 This is a new project. The basic functionality is there and can be used.
 
-Next topics/open issues:
-- This list as GitHub issues ;)
-- Documentation improvement
-- Ability to use with other form frameworks
-- Pass through validation props to wrapped component via configuration
-- Add hoist-non-react-statics
+Any feedback, suggestions and constributions are welcome. 
