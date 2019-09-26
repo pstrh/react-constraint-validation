@@ -12,13 +12,13 @@ const defaultMessages: Messages = {
     "pattern": "{name} does not match the pattern {pattern}",
     "number": "{name} must be a number",
     "email": "{name} is not a valid email"
-}
+};
 
 type InterpolationPatternFn =  (param: string) => string;
 
 const defaultInterpolationPatternFn: InterpolationPatternFn = (param: string): string => {
     return `{${param}}`;
-}
+};
 
 let configuredMessages: Messages = defaultMessages;
 let interpolationPatternFn: InterpolationPatternFn = defaultInterpolationPatternFn;
@@ -67,6 +67,7 @@ export function required(name: string | undefined, value: any): string | undefin
     if (!value) {
         return resolveErrorMessage("required", name, {name, value});
     }
+    return undefined;
 }
 
 export function min(name: string | undefined, value: string, minValue: number): string | undefined {
@@ -77,6 +78,7 @@ export function min(name: string | undefined, value: string, minValue: number): 
     if (valueAsNumber && valueAsNumber < minValue) {
         return resolveErrorMessage("min", name, {name, value, minValue});
     }
+    return undefined;
 }
 
 export function max(name: string | undefined, value: string, maxValue: number): string | undefined {
@@ -87,6 +89,7 @@ export function max(name: string | undefined, value: string, maxValue: number): 
     if (valueAsNumber && valueAsNumber > maxValue) {
         return resolveErrorMessage("max", name, {name, value, maxValue});
     }
+    return undefined;
 }
 
 export function minLength(name: string | undefined, value: string, minLength: number): string | undefined {
@@ -96,6 +99,7 @@ export function minLength(name: string | undefined, value: string, minLength: nu
     if (value.length < minLength) {
         return resolveErrorMessage("minLength", name, {name, value, minLength});
     }
+    return undefined;
 }
 
 export function maxLength(name: string | undefined, value: string, maxLength: number): string | undefined {
@@ -105,6 +109,7 @@ export function maxLength(name: string | undefined, value: string, maxLength: nu
     if (value.length > maxLength) {
         return resolveErrorMessage("maxLength", name, {name, value, maxLength});
     }
+    return undefined;
 }
 
 export function pattern(name: string | undefined, value: string, pattern: string): string | undefined {
@@ -115,6 +120,7 @@ export function pattern(name: string | undefined, value: string, pattern: string
     if (!regEx.test(value)) {
         return resolveErrorMessage("pattern", name, {name, value, pattern});
     }
+    return undefined;
 }
 
 export function email(name: string | undefined, value: string): string | undefined {
@@ -125,6 +131,7 @@ export function email(name: string | undefined, value: string): string | undefin
     if (maxLength(name, value, 254) || pattern(name, value, "^(([^<>()\\[\\]\\.,;:\\s@\\\"]+(\\.[^<>()\\[\\]\\.,;:\\s@\\\"]+)*)|(\\\".+\\\"))@(([^<>()[\\]\\.,;:\\s@\\\"]+\\.)+[^<>()[\\]\\.,;:\\s@\\\"]{2,})$")) {
         return resolveErrorMessage("email", name, {name, value});
     }
+    return undefined;
 }
 
 export function number(name: string | undefined, value: string): string | undefined {
@@ -135,5 +142,6 @@ export function number(name: string | undefined, value: string): string | undefi
     if (!valueAsNumber) {
         return resolveErrorMessage("number", name, {name, value});
     }
+    return undefined;
 }
 

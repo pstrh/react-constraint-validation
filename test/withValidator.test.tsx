@@ -4,10 +4,10 @@ import {
     min,
     minLength,
     required, pattern, email
-} from "../src/Validator";
+} from "../src";
 import * as React from "react";
 import * as renderer from "react-test-renderer";
-import {withValidator} from "../src/withValidator";
+import {withValidator} from "../src";
 
 interface FieldProps {
     name?: string,
@@ -44,7 +44,7 @@ test("NumberField test", () => {
     expect(tree).toMatchSnapshot();
 });
 
-const TextFieldTest: React.SFC = () => {
+const TextFieldTest = () => {
     return (
         <>
             <TextField name="test"/>

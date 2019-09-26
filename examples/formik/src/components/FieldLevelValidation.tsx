@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {Formik, Field, Form, ErrorMessage} from 'formik';
-import { number, max, maxLength, min, minLength, required, email } from "../../../../src/Validator";
-import { withValidator } from "../../../../src/withValidator";
+import {withValidator, required, min, max, number, minLength, maxLength, email} from '../../../../.';
+import {ErrorMessage, Field, Form, Formik} from "formik";
 
 const NumberField = withValidator({required, min, max },{number})(Field);
 

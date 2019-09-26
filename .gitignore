@@ -1,5 +1,10 @@
 .idea
+*.log
+.DS_Store
 node_modules
-/dist
-git c
+.cache
+.rts2_cache_cjs
+.rts2_cache_esm
+.rts2_cache_umd
+dist
 /HOW_TO_RELEASE.md
