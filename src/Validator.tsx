@@ -1,5 +1,5 @@
 
-type Messages = {
+export type Messages = {
     [key: string]: string
 }
 
