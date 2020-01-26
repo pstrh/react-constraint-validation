@@ -1,5 +1,5 @@
 # react-constraint-validation
-**React Constraint Validation** is a small library that provides validation props for React components similar to the HTML Constraint Validation attributes.
+**React Constraint Validation** is a small library that aims to provide validation props for React components similar to the HTML Constraint Validation attributes.
 
 ### Features
 
@@ -7,7 +7,7 @@
 - Easily extensible with own validators
 - Localisation of error messages and interpolation
 - Written in Typescript 
-- Perfect fit to Formik
+- To be used with Formik
 
 ### Use case
 
@@ -21,7 +21,7 @@ Instead you want to create Fields that directly support these validations with r
     
 ### Form framework needed
 
-**React Constraint Validation** provides a HOC and some standard validators. The HOC can be used to enhance form components of your preferred form framework e.g. Formik.
+**React Constraint Validation** provides a experimental HOC and some standard validators. The HOC can be used to enhance form components of your preferred form framework e.g. Formik.
 
 Limitation: Actually it currently only supports Formik ;) Support for other form frameworks like React Final Form is planned with one of the next releases.   
     
